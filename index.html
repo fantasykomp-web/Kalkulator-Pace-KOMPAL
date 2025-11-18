@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Pace Lari KOMPAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Kalkulator Pace Lari KOMPAL</h1>
+        
+        <div class="input-group">
+            <label for="distance">Jarak (km):</label>
+            <input type="number" id="distance" placeholder="Contoh: 11.01">
+        </div>
+        
+        <div class="input-group">
+            <label>Waktu:</label>
+            <input type="number" id="hours" placeholder="Jam" value="0" min="0">
+            <input type="number" id="minutes" placeholder="Menit" value="0" min="0" max="59">
+            <input type="number" id="seconds" placeholder="Detik" value="0" min="0" max="59">
+        </div>
+        
+        <button onclick="calculatePace()">Hitung Pace</button>
+        
+        <div class="result-container">
+            <p>Pace Anda:</p>
+            <p id="paceResult">00:00 min/km</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
