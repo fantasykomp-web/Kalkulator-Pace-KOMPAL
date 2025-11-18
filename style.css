@@ -9,7 +9,10 @@ body {
 }
 
 .calculator-container {
-    background-color: red;
+    background-image: url('https://drive.google.com/file/d/12cmKsED_I16-x49iKGLcu0rlwYzygYxO/view?usp=sharing'); /* Ganti dengan path atau URL gambar Anda */
+    background-size: cover; /* Pastikan gambar menutupi seluruh area container tanpa terdistorsi */
+    background-position: center; /* Posisikan tengah gambar */
+    background-repeat: no-repeat;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
