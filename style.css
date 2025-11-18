@@ -9,10 +9,17 @@ body {
 }
 
 .calculator-container {
-    background-image: url('https://drive.google.com/uc?export=view&id=12cmKsED_I16-x49iKGLcu0rlwYzygYxO');
+    /* MENGGANTI BACKGROUND-IMAGE DENGAN BACKGROUND DUA LAPIS (Transparansi 70%) */
+    /* Lapisan 1: Overlay putih dengan opasitas 0.7 (membuat gambar terlihat 70% buram/30% transparan) */
+    /* Lapisan 2: Gambar Latar Belakang menggunakan link akses langsung */
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                url('https://drive.google.com/uc?export=view&id=12cmKsED_I16-x49iKGLcu0rlwYzygYxO');
+    
     background-size: cover; /* Pastikan gambar menutupi seluruh area container tanpa terdistorsi */
     background-position: center; /* Posisikan tengah gambar */
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* Mencegah pengulangan */
+
+    /* Properti Styling lainnya tetap sama */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
